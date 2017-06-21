@@ -28,7 +28,7 @@ function EnttecUSBDMXPRO(device_id, options) {
 }
 
 EnttecUSBDMXPRO.prototype.send_universe = function() {
-	if(!this.dev.isOpen()) {
+	if(!this.dev.isOpen) {
 		return
 	}
 	var hdr = Buffer([
